@@ -1,0 +1,404 @@
+DOCTYPE html>
+<html lang="pt-AO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Presença online | da Escola da I.e.r.a</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #102b50;
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #48b4ff;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #48b4ff;
+        }
+
+        .hero {
+            background: linear-gradient(120deg, #102b50, #1768a8);
+            color: white;
+            padding: 90px 8%;
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero h1 {
+            font-size: clamp(32px, 5vw, 48px);
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #66c5ff;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .botao {
+            display: inline-block;
+            padding: 12px 22px;
+            background: #087cff;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .botao:hover {
+            background: #005ac2;
+        }
+
+        section {
+            padding: 55px 7%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 25px;
+            color: #102b50;
+        }
+
+        .descricao {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .cartoes {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .cartao {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 14px #0000000d;
+        }
+
+        .cartao .icone {
+            font-size: 38px;
+            margin-bottom: 12px;
+        }
+
+        .cartao h3 {
+            margin-bottom: 10px;
+        }
+
+        .cartao p {
+            margin-bottom: 18px;
+        }
+
+        .acesso {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .acesso label {
+            display: block;
+            margin: 12px 0 5px;
+        }
+
+        .acesso input,
+        .acesso select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 7px;
+            font-size: 16px;
+        }
+
+        .acesso .botao {
+            margin-top: 18px;
+            width: 100%;
+        }
+
+        #mensagem {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        footer {
+            background: #102b50;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        footer span {
+            color: #48b4ff;
+        }
+
+        @media (max-width: 800px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            .cartoes {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 550px) {
+            .cartoes {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding: 60px 7%;
+            }
+
+            section {
+                padding: 40px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🎓 Escola <span>I.e.ra</span></div>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre nós</a>
+        <a href="#classes">Classes</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#acesso">Entrar</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Presença online<br>
+                <span> Escola da I.e.r.a</span>
+            </h1>
+
+            <p>
+                Uma plataforma digital para aproximar alunos,
+                professores e encarregados de educação,
+                facilitando o acesso à informação escolar.
+            </p>
+
+            <a href="#servicos" class="botao">
+                Explorar serviços
+            </a>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre a Escola</h2>
+
+        <p class="descricao">
+            A presença online é uma plataforma
+            destinada a apoiar a gestão escolar, melhorar a
+            comunicação e facilitar o acompanhamento académico.
+            A escola poderá divulgar informações institucionais
+            e disponibilizar serviços digitais à comunidade escolar.
+        </p>
+    </section>
+
+    <section id="classes">
+        <h2>As Nossas Classes</h2>
+
+        <div class="cartoes">
+            <article class="cartao">
+                <div class="icone">📚</div>
+                <h3>Ensino Primário</h3>
+                <p>1.ª à 6.ª classe</p>
+            </article>
+
+            <article class="cartao">
+                <div class="icone">🎓</div>
+                <h3>I Ciclo do Ensino Secundário</h3>
+                <p>7.ª à 9.ª classe</p>
+            </article>
+
+            <article class="cartao">
+                <div class="icone">🏫</div>
+                <h3>II Ciclo do Ensino Secundário</h3>
+                <p>10.ª à 12.ª classe</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <h2>Serviços Académicos</h2>
+
+        <div class="cartoes">
+            <article class="cartao">
+                <div class="icone">📊</div>
+                <h3>Notas</h3>
+                <p>Consulta de resultados académicos por utilizadores autorizados.</p>
+            </article>
+
+            <article class="cartao">
+                <div class="icone">📅</div>
+                <h3>Horários</h3>
+                <p>Consulta dos horários das turmas e das aulas.</p>
+            </article>
+
+            <article class="cartao">
+                <div class="icone">📝</div>
+                <h3>Trabalhos</h3>
+                <p>Publicação e consulta de tarefas escolares.</p>
+            </article>
+
+            <article class="cartao">
+                <div class="icone">📢</div>
+                <h3>Avisos</h3>
+                <p>Comunicados e informações da direção.</p>
+            </article>
+
+            <article class="cartao">
+                <div class="icone">👨‍🏫</div>
+                <h3>Professores</h3>
+                <p>Área reservada para atividades dos professores.</p>
+            </article>
+
+            <article class="cartao">
+                <div class="icone">🔐</div>
+                <h3>Administração</h3>
+                <p>Gestão de alunos, professores, turmas e utilizadores.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="acesso">
+        <h2>Acesso à Plataforma</h2>
+
+        <div class="acesso">
+            <p>
+                Entra com a tua conta escolar ou solicita
+                o registo para aprovação pela administração.
+            </p>
+
+            <form id="formAcesso">
+                <label for="perfil">Tipo de utilizador</label>
+
+                <select id="perfil" required>
+                    <option value="">Selecionar perfil</option>
+                    <option value="aluno">Aluno</option>
+                    <option value="professor">Professor</option>
+                    <option value="administrador">Administrador</option>
+                </select>
+
+                <label for="utilizador">Utilizador</label>
+
+                <input
+                    id="utilizador"
+                    type="text"
+                    placeholder="Nome de utilizador"
+                    autocomplete="username"
+                    required
+                >
+
+                <label for="senha">Palavra-passe</label>
+
+                <input
+                    id="senha"
+                    type="password"
+                    placeholder="Palavra-passe"
+                    autocomplete="current-password"
+                    required
+                >
+
+                <button type="submit" class="botao">
+                    Entrar
+                </button>
+
+                <p id="mensagem" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <h3>I.E.R.A. — Escola Presença Online</h3>
+    <p>Educação, conhecimento e futuro.</p>
+    <p>Angola | © <span id="ano"></span></p>
+</footer>
+
+<script>
+    document.getElementById("ano").textContent =
+        new Date().getFullYear();
+
+    document.getElementById("formAcesso")
+        .addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            document.getElementById("mensagem").textContent =
+                "A interface está preparada. Para iniciar sessão, é necessário integrar o servidor e a base de dados da escola.";
+        });
+</script>
+
+</body>
+</html>
